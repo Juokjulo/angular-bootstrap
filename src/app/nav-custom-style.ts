@@ -4,4 +4,6 @@ import {Component} from '@angular/core';
   selector: 'ngbd-nav-custom-style',
   templateUrl: './nav-custom-style.html'
 })
-export class NgbdNavCustomStyle { }
+export class NgbdNavCustomStyle {
+  
+ }

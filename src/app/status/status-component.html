@@ -1,1 +1,30 @@
-tesghzsdfgbskd
+
+<div class='card'>
+  <div class='card-header'>
+    <div class='row'>
+           <div class='col-1'>#</div>
+           <div class='col-3'>Service</div>
+           <div class='col-2'>Service läuft seit</div>
+           <div class='col-2'>Abrufzeitpunkt</div>
+           <div class='col-2'>Status</div>
+           <div class='col-2'></div>
+    </div>
+  </div>
+</div>
+<div id='accordion'>
+<div *ngFor="let item of services; let id=index;" class='card' data-toggle='collapse' href='#'>
+<div class='card-header card-hover' >
+    <div class='row'>
+           <div class='col-1'>{{id+1}}</div>
+            <div class='col-3'><a href={{item.url}}  target='_blank'>{{item.serviceName}}</a></div>
+            <div class='col-2'>{{item.startupDate}}</div>
+            <div class='col-2'>{{item.timestamp}}</div>
+            <div class='col-2'><a href={{item.url}} target='_blank'>{{item.status}}</a></div>
+            <div class='col-2'><div class='statusLight'></div></div>
+      </div>
+    </div>
+    <div class='collapse' data-parent='#accordion' id='#'>
+        <div class='card card-body'>{{item.description}} </div>
+    </div>
+</div>
+</div>
