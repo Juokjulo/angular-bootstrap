@@ -7,6 +7,19 @@
       "sourceRoot": "src",
       "projectType": "application",
       "prefix": "app",
+      "i18n": {
+        // The locale we use in development, defaults to en-US
+        "sourceLocale": "en-CA",
+        // All other locales our app supports
+        "locales": {
+          "de": {
+            "translation": "src/locale/messages.de.xlf"
+          },
+          "fr": {
+            "translation": "src/locale/messages.fr.xlf"
+          }
+        }
+      },
       "schematics": {},
       "architect": {
         "build": {

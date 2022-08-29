@@ -2,16 +2,19 @@
   <li [ngbNavItem]="1">
     <a ngbNavLink class="navbar-brand" href="#">Simple Browsing Platform</a>
     <ng-template ngbNavContent>
-      <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
-        master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro
-        keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat
-        salvia cillum iphone. Seitanio aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+    <home-component></home-component>
     </ng-template>
   </li>
+  <li [ngbNavItem]="1">
+  <a ngbNavLink class="navbar-brand" href="#">Simple Browsing Platform</a>
+  <ng-template ngbNavContent>
+  <app-locale-switcher></app-locale-switcher>
+  </ng-template>
+</li> 
   <li [ngbNavItem]="2"  class="nav-item">
     <a ngbNavLink  class="nav-link"><b>Home</b></a>
     <ng-template ngbNavContent>
-      <p>We are Home now!</p>
+    <home-component></home-component>
     </ng-template>
   </li>
   <li ngbDropdown class="nav-item">
